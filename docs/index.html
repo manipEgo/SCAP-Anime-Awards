@@ -39,8 +39,8 @@
       owner: 'manipEgo',
       admin: ['manipEgo'],
       distractionFreeMode: false,
-      id: document.title,
-      title: 'Comments: ' + document.title,
+      id: location.hash.split('?id=')[0],
+      title: 'Comments: ' + location.hash.split('?id=')[0],
     })
   </script>
 </body>
