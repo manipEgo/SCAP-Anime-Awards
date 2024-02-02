@@ -22,8 +22,26 @@
   <!-- Docsify v4 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
   <!-- plugins -->
+  <!-- sidebar collapse -->
   <script src="//cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js"></script>
+  <!-- search -->
   <script src="//unpkg.com/docsify/lib/plugins/search.min.js"></script>
+  <!-- gitalk -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
+
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
+  <script>
+    const gitalk = new Gitalk({
+      clientID: '4a4b76c61de8ed8557a2',
+      clientSecret: '7fe316599ce600a5ec93a6f4b58f2d85ce9783ab',
+      repo: 'SCAP-Anime-Awards',
+      owner: 'manipEgo',
+      admin: ['manipEgo'],
+      distractionFreeMode: false,
+      id: decodeURI(window.location.pathname),
+    })
+  </script>
 </body>
 </html>
 
